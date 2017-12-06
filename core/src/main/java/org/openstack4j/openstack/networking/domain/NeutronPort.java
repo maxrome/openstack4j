@@ -529,6 +529,14 @@ public class NeutronPort implements Port {
 			return this;
     	}
 
+		  @Override
+		  public PortBuilder clearSecurityGroups() {
+				m.securityGroups=new ArrayList<String>();
+				return this;
+			}
+
+
+
 	}
 
 }
